@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title> Tic-Tac-Toe </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="text-align: center;"
+        ><b>{{ currentPlayer }}</b></ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid class="grid">
+        <ion-row>
+          <ion-col>
+            <ion-button id="1" (click)="onClick('1')" fill="clear" expand="full"></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button id="2" (click)="onClick('2')" fill="clear" expand="full"></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button id="4" (click)="onClick('4')" fill="clear" expand="full"></ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button id="8" (click)="onClick('8')" fill="clear" expand="full"></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button
+              id="16"
+              (click)="onClick('16')"
+              fill="clear"
+              expand="full"
+            ></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button
+              id="32"
+              (click)="onClick('32')"
+              fill="clear"
+              expand="full"
+            ></ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button
+              id="64"
+              (click)="onClick('64')"
+              fill="clear"
+              expand="full"
+            ></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button
+              id="128"
+              (click)="onClick('128')"
+              fill="clear"
+              expand="full"
+            ></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button
+              id="256"
+              (click)="onClick('256')"
+              fill="clear"
+              expand="full"
+            ></ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <b>Player 1 Wins</b>
+      </ion-col>
+      <ion-col>
+        <b>Player 2 Wins</b>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <b class="playerOne">{{playerOneWins}}</b>
+      </ion-col>
+      <ion-col>
+        <b class="playerTwo">{{playerTwoWins}}</b>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
