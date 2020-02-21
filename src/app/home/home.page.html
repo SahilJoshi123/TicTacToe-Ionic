@@ -1,14 +1,17 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title> Tic-Tac-Toe </ion-title>
+    <ion-title> Tic Tac Toe </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onUndo()">Undo</ion-button>
+      <ion-button (click)="onNewGame()">New Game</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content padding>
   <ion-card>
     <ion-card-header>
       <ion-card-title style="text-align: center;"
-        ><b>{{ currentPlayer }}</b></ion-card-title
-      >
+        ><b>{{ currentPlayer }}</b></ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-grid class="grid">
