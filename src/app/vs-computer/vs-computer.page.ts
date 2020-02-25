@@ -70,7 +70,7 @@ export class VsComputerPage {
         return true;
       }
     }
-    if (this.count == 9 && flag == 0) {
+    if (this.count == 10 && flag == 0) {
       this.alertCtrl
         .create({
           header: "Game Over",
@@ -103,7 +103,9 @@ export class VsComputerPage {
     this.availMoves = this.availMoves.filter(data => data != Number(ind));
     console.log("player 1 score: " + this.playerOneScore);
     this.count += 1;
-    if (!this.checkWin(this.playerOneScore) && this.count<10) {
+    let result = this.checkWin(this.playerOneScore);
+    console.log(this.count)
+    if (!result && this.count<10) {
       this.computerMove();
     }
   }

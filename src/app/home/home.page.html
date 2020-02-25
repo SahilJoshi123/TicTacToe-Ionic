@@ -1,11 +1,13 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title style="text-align: center;"> Tic Tac Toe </ion-title>
+    <ion-title style="text-align: center;"> Home </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content padding>
-    <ion-card>
+<ion-content padding >
+    <ion-card style="margin-top: 10%;">
       <ion-card-content>
+        <img src="assets/background.png">
+        <br><hr>
           <ion-button color="dark" [routerLink]="['../vs-computer']" expand="full"> VS Computer </ion-button><br>
           <ion-button color="dark" [routerLink]="['../two-player']" expand="full"> Two Player </ion-button>
       </ion-card-content>
