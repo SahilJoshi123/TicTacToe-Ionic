@@ -1,12 +1,13 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import { AlertController } from "@ionic/angular";
 
+
 @Component({
-  selector: "app-home",
-  templateUrl: "home.page.html",
-  styleUrls: ["home.page.scss"]
+  selector: 'app-two-player',
+  templateUrl: './two-player.page.html',
+  styleUrls: ['./two-player.page.scss'],
 })
-export class HomePage {
+export class TwoPlayerPage {
   public currentPlayer = "Player One";
 
   public count = 1;
